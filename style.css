@@ -1,0 +1,57 @@
+* {
+    border: red 1px solid;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side,
+.right-side {
+    display: flex;
+}
+
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    
+}
+
+.first section {
+    flex: 1;
+}
+
+.first section section {
+    flex-grow: 0;
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(199, 194, 194);
+}
+
+.first > section ~ section {
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.second h3 {
+    text-align: center;
+}
+
+.img-and-subtext {
+    display: flex;
+}
