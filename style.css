@@ -3,48 +3,155 @@
     box-sizing: border-box;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
+body header,
+body section section,
+body section h3,
+body .fourth section span,
+body footer {
+    margin: 0px 100px;
 }
 
 header {
     display: flex;
+    background-color: #1F2937;
     justify-content: space-between;
+    
 }
 
 .left-side,
 .right-side {
     display: flex;
+    
+}
+
+.left-side {
+    font-size: 24px;
+    font-weight: #F9FAF8
+}
+
+.right-side {
+    font-size: 18px;
+    font-weight: #E5E7EB;
+}
+
+.left-side > li {
+    font-weight: bold;
 }
 
 li,
 a {
     list-style: none;
     text-decoration: none;
+    color: white;
 }
 
 .first {
     display: flex;
     align-items: center;
-    
+    background-color: #1F2937;
+    padding: 40px 0px;
+}
+
+.first section h1 {
+    font-size: 48px;
+    font-weight: #F9FAF8;
+}
+
+.first section p {
+    font-size: 18px;
+    font-weight: #E5E7EB;
 }
 
 .first section {
     flex: 1;
+    color: white; 
 }
 
 .first section section {
     flex-grow: 0;
     text-align: center;
-    padding: 40px;
-    background-color: rgb(199, 194, 194);
+    padding: 100px;
+    background-color: rgb(163, 159, 159);
+}
+
+.second {
+    
 }
 
 .second h3 {
     text-align: center;
+    font-size: 36px;
+    font-weight: #1F2937;
 }
 
-.img-and-subtext {
+.img-and-subtext  {
     display: flex;
+    padding: 0px 40px;
+    flex-wrap: wrap;
+}
+
+.img-and-subtext section {
+    width: 300px;
+}
+
+section img {
+    border: solid 2px #3882F6;
+}
+
+.img-and-subtext section section{
+    border: blue 1px solid;
+}
+
+.third {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    margin: 0 60px;
+}
+
+.third h3 {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.third span {
+    font-weight: bold;
+    text-align: right;
+}
+
+.fourth {
+    padding: 40px;
+    display: flex;
+}
+
+.fourth section {
+    margin: 10px 40px;
+    background-color: #3882F6;
+    color: white;
+}
+
+footer {
+    background-color: #1F2937;
+    text-align: center;
+    color: white;
+    
+}
+
+footer p {
+    padding: 30px;
+}
+
+.fourth section {
+    align-content: center;
+}
+
+.fourth section button {
+    color: white;
+    border: white 2px solid;
+}
+
+button {
+    background-color: #3882F6;
+    padding: 2px 12px;
 }
