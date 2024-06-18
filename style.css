@@ -3,14 +3,9 @@
     
 }
 
-/* body header ul,
-body section section,
-body section h3,
-body section span,
-
-body footer p {
-    margin: 0px 100px;
-} */
+body {
+    margin: 0;
+}
 
 header {
     display: flex;
@@ -36,6 +31,10 @@ header {
     font-size: 18px;
     font-weight: #E5E7EB;
     padding: 0;
+}
+
+.right-side li {
+    margin-left: 20px;
 }
 
 .left-side > li {
@@ -70,17 +69,28 @@ a {
     margin: 0;
 }
 
-.first section {
+.first > section:first-of-type {
     color: white; 
     max-width: 350px;
+    margin-right: 20px;
 }
 
 .first section button {
     background-color: #3882F6;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #3882F6;
+    cursor: pointer;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+
+.first section section {
+    width: 500px;
 }
 
 .second {
-    
+    margin-bottom: 100px;
 }
 
 .second h3 {
@@ -98,17 +108,30 @@ a {
     align-items: center;
 }
 
-.img-and-subtext section {
+.img-and-subtext section img {
     width: 250px;
     margin: 40px;
-    
+    margin-bottom: ;
+    border-radius: 10px;
+    border: 8px solid #3882F6;
+    margin-bottom: 10px;
+}
+
+.img-and-subtext section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img-and-subtext section span {
+    font-size: 24px;
 }
 
 .third {
     display: flex;
     flex-direction: column;
     background-color: #E5E7EB;
-    padding: 80px 20%;
+    padding: 100px 20%;
 }
 
 .third h3 {
@@ -124,17 +147,18 @@ a {
 }
 
 .fourth {
-    padding: 40px;
+    padding: 60px;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .fourth > section:first-child {
-    padding: 20px 0px 20px 90px;
+    padding: 20px 200px 20px 190px;
     background-color: #3882F6;
     color: white;
     margin: 0;
+    border-radius: 5px;
+    border: 2px solid #3882F6;
 }
 
 .fourth section h3 {
@@ -148,12 +172,20 @@ a {
 .fourth section button {
     color: white;
     border: white 2px solid;
+    border-radius: 5px;
+    border-color: white;
+    border: 2px solid white;
+    background-color: #3882F6;
+    transform: translate(20px, -10px);
+    cursor: pointer;
+    /* margin-left: -10px;
+    padding-right: 90px; */
 }
 
-.fourth button {
+/* .fourth button {
     background-color: #3882F6;
     padding: 35px 10px;
-}
+} */
 
 footer {
     background-color: #1F2937;
