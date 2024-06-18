@@ -1,20 +1,22 @@
-* {
+ {
     border: red 1px solid;
-    box-sizing: border-box;
+    
 }
 
-body header,
+/* body header ul,
 body section section,
 body section h3,
-body .fourth section span,
-body footer {
+body section span,
+
+body footer p {
     margin: 0px 100px;
-}
+} */
 
 header {
     display: flex;
     background-color: #1F2937;
     justify-content: space-between;
+    padding: 0 10%;
     
 }
 
@@ -26,12 +28,14 @@ header {
 
 .left-side {
     font-size: 24px;
-    font-weight: #F9FAF8
+    font-weight: #F9FAF8;
+    padding: 0;
 }
 
 .right-side {
     font-size: 18px;
     font-weight: #E5E7EB;
+    padding: 0;
 }
 
 .left-side > li {
@@ -48,30 +52,31 @@ a {
 .first {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #1F2937;
-    padding: 40px 0px;
+    padding: 40px 10%;
+    flex: 1 1 auto;
 }
 
 .first section h1 {
     font-size: 48px;
     font-weight: #F9FAF8;
+    margin: 0;
 }
 
 .first section p {
     font-size: 18px;
     font-weight: #E5E7EB;
+    margin: 0;
 }
 
 .first section {
-    flex: 1;
     color: white; 
+    max-width: 350px;
 }
 
-.first section section {
-    flex-grow: 0;
-    text-align: center;
-    padding: 100px;
-    background-color: rgb(163, 159, 159);
+.first section button {
+    background-color: #3882F6;
 }
 
 .second {
@@ -82,37 +87,35 @@ a {
     text-align: center;
     font-size: 36px;
     font-weight: #1F2937;
+    margin-bottom: 0;
 }
 
 .img-and-subtext  {
     display: flex;
     padding: 0px 40px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-and-subtext section {
-    width: 300px;
-}
-
-section img {
-    border: solid 2px #3882F6;
-}
-
-.img-and-subtext section section{
-    border: blue 1px solid;
+    width: 250px;
+    margin: 40px;
+    
 }
 
 .third {
     display: flex;
     flex-direction: column;
     background-color: #E5E7EB;
-    margin: 0 60px;
+    padding: 80px 20%;
 }
 
 .third h3 {
     font-size: 36px;
     font-weight: 300;
     font-style: italic;
+    margin: 0;
 }
 
 .third span {
@@ -123,12 +126,33 @@ section img {
 .fourth {
     padding: 40px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.fourth section {
-    margin: 10px 40px;
+.fourth > section:first-child {
+    padding: 20px 0px 20px 90px;
     background-color: #3882F6;
     color: white;
+    margin: 0;
+}
+
+.fourth section h3 {
+    margin: 0;
+}
+
+.fourth section + section {
+    margin-left: 0px;
+}
+
+.fourth section button {
+    color: white;
+    border: white 2px solid;
+}
+
+.fourth button {
+    background-color: #3882F6;
+    padding: 35px 10px;
 }
 
 footer {
@@ -139,19 +163,5 @@ footer {
 }
 
 footer p {
-    padding: 30px;
-}
-
-.fourth section {
-    align-content: center;
-}
-
-.fourth section button {
-    color: white;
-    border: white 2px solid;
-}
-
-button {
-    background-color: #3882F6;
-    padding: 2px 12px;
+    padding: 40px;
 }
